@@ -1,0 +1,71 @@
+OFFENE PUNKTE UND NICHT ÜBERNEHMBARE BILDER
+Stand: 30.09.2026
+
+FÜNF NICHT ABRUFBARE ORIGINALBILDER
+Originaldateien und aus dem Quelltext bekannte responsive Varianten wurden versucht.
+Die Originaladressen lieferten HTTP-404-/Abruffehler. Es wurden keine Ersatzbilder
+erfunden und keine defekten Bildverweise in den sichtbaren Seiten zurückgelassen.
+
+1. Ingeborg mit Pferd und Hunden mit Adresse.jpg
+   Bereich: Reico-Vertriebspartner / Bildhintergrund
+   Quelladresse: https://helfendeassistenzhundepfotenimgrund.de/.cm4all/uproc.php/0/.Ingeborg%20mit%20Pferd%20und%20Hunden%20mit%20Adresse.jpg/picture-200?_=18e9fe55a40
+
+2. 7733.jpg
+   Bereich: Allgemeiner im Stylesheet referenzierter Hintergrund
+   Quelladresse: https://helfendeassistenzhundepfotenimgrund.de/.cm4all/uproc.php/0/.7733.jpg/picture-200?_=18e982cce28
+
+3. 20240513_173526.jpg
+   Bereich: Galerie: Verschiedene Hunde im Training
+   Quelladresse: https://helfendeassistenzhundepfotenimgrund.de/.cm4all/uproc.php/0/Galerie/20240513_173526.jpg?_=18fadbf3f18
+
+4. Käthe übersteigen 20250 802_110727.jpg
+   Bereich: Galerie: Verschiedene Hunde im Training
+   Quelladresse: https://helfendeassistenzhundepfotenimgrund.de/.cm4all/uproc.php/0/Galerie/K%C3%A4the%20%C3%BCbersteigen%2020250%20802_110727.jpg?_=198d557cd70
+
+5. Käthe 20250730_182752.jpg
+   Bereich: Galerie: Verschiedene Hunde im Training
+   Quelladresse: https://helfendeassistenzhundepfotenimgrund.de/.cm4all/uproc.php/0/Galerie/K%C3%A4the%2020250730_182752.jpg?_=198d557aa48
+
+Die genauen Motive der nicht abrufbaren Dateien konnten nicht visuell geprüft werden.
+Wenn diese fünf Dateien im ursprünglichen STRATO-Bildbestand oder auf einem Rechner
+vorhanden sind, können sie anhand der genannten Originalnamen nachgetragen werden.
+
+INHALTLICHE UNKLARHEITEN – UNVERÄNDERT AUS DER QUELLE
+1. Preise: „Ab dem 01. August gelten folgende Preise:“ nennt kein Jahr.
+2. Aktuelles: enthält vergangene und geplante Termine, unter anderem den 13.09.25.
+   Es wurde nicht vermutet, welche Termine weiterhin gültig sind.
+3. Signalassistenzhunde: Die Originalseite wiederholt Text; die Wiederholung endet
+   abgeschnitten mit „zum Kind über“. Beides wurde wortgetreu übernommen.
+4. Impressum und Datenschutzerklärung: Die Datenschutzerklärung ist vom 1.10.2020.
+   Sie enthält Angaben zu früheren technischen Diensten (u.a. Google Fonts). Der
+   Export nutzt Systemschriften und keine externe Google-Fonts-Einbindung. Die
+   Originaltexte wurden trotzdem wie verlangt erhalten und nicht rechtlich angepasst.
+5. Fachliche Aussagen, Leistungs-/Zuverlässigkeitsangaben und gesetzliche Aussagen
+   wurden übernommen, nicht fachlich oder rechtlich neu geprüft.
+6. Sonntag und Feiertage: keine eindeutigen Sonderöffnungszeiten in der Quelle.
+7. Ein bereits im Original verwendetes Bild stammt aus der STRATO-Mediathek:
+   https://strato-editor.com/.cm4all/mediadb/static/500/de_DE/Allgemein/fp_150003601.jpg
+   Die Nutzungsrechte für einen Export außerhalb des Baukastens wurden nicht geprüft.
+   Die lokale Zuordnung steht im Bildverzeichnis.
+
+TECHNISCHE ABWEICHUNGEN
+- Das Formular versendet nicht selbst. Es öffnet einen E-Mail-Entwurf; alternativ
+  lässt sich der Nachrichtentext kopieren. Für direkten Versand wäre ein externer
+  Dienst oder Servercode notwendig, was ausdrücklich nicht Teil des Auftrags ist.
+- Die Karte ist ein externer Anfahrtslink statt eines STRATO-Kartenwidgets.
+- Statistikpixel und versteckte technische Baukasten-Ressourcen sind nicht archiviert.
+  Das sind keine inhaltlichen Originalfotos.
+- Galerie, Menü und Öffnungszeitenstatus verwenden eigenes lokales JavaScript.
+- Alte Verzeichnisadressen sind über Weiterleitungsseiten erreichbar. Alte spezielle
+  index.php-/Widget-Adressen können zusätzliche Regeln beim Hoster benötigen.
+
+PRÜFGRENZE
+Die tatsächliche Darstellung auf Desktop, Tablet und Smartphone konnte hier nicht
+im Browser angesehen werden. Der Sites-Skill lässt für reine statische Ordner keine
+Browser-Vorschau in dieser Umgebung zu. Dateiprüfungen, Textabgleich, Bildprüfung
+und 19 JavaScript-Verhaltensprüfungen sind durchgeführt. Eine vollständige visuelle
+Browser-Abnahme steht noch aus; siehe PRUEFBERICHT.txt.
+
+SONSTIGE INHALTSLÜCKEN
+Im dokumentierten Textabgleich wurden keine fehlenden Originaltextblöcke gefunden.
+Die fünf fehlenden Bilder oben sind die festgestellten Bildlücken.

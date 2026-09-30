@@ -1,0 +1,81 @@
+PRÜFBERICHT – STATISCHE WEBSITE
+Erstellt: 30.09.2026
+Quelle: https://helfendeassistenzhundepfotenimgrund.de/
+Quellstand: erneuter Abruf aller 23 Inhaltsseiten am 29.09.2026.
+
+UMFANG
+27 Inhaltsseiten, 18 statische Weiterleitungsseiten, insgesamt 45 HTML-Dateien.
+298 unterschiedliche Fotos/Grafiken plus ein technisches Favicon.
+268 Bilder eingebunden, 30 zusätzliche Originalbilder im Archiv.
+Neun Galerien: 250 Quelleinträge, 247 erreichbare Einträge übernommen.
+
+INHALTSABGLEICH
+546 nichtleere Textblöcke der 23 Originalseiten wurden gegen die HTML-Inhalte des
+Exports geprüft. Erfasst sind Absätze, Listeneinträge, Überschriften und Tabellen-
+zellen einschließlich persönlicher und fachlicher Texte, Preisen und Rechtstexten.
+Leerraum/Zeilenumbrüche wurden für den Vergleich normalisiert. Ergebnis: 0 fehlende
+Textblöcke. Der konkrete Seitenabgleich steht in inhaltsabgleich.csv.
+
+Zusätzlich wurden alle längeren neuen Absätze im Hauptinhalt mit dem Quelltext
+verglichen. Der einzige neue längere Absatz erklärt die E-Mail-Vorbereitung des
+statischen Kontaktformulars. Kurze Ergänzungen dienen Navigation und Bedienung,
+z.B. Seitenübersicht, Schnellzugriff, Galeriebedienung und Dateizähler.
+Die bisherigen frei formulierten Werbetexte des Prototyps sind entfernt.
+Die Aussage „Ich helfe Ihnen gerne!“ stammt aus dem Kopf der Originalwebsite.
+Originalwiederholungen, Tippfehler, alte Termine und unklare Angaben sind erhalten.
+
+DATEIEN UND PFADE
+Alle href-, src- und data-full-Verweise auf lokale Dateien wurden aufgelöst und
+auf Existenz geprüft. Auch Sprungmarken innerhalb von HTML-Dateien wurden geprüft.
+Keine absoluten lokalen Pfade und keine Verweise außerhalb des Website-Ordners.
+Keine externen Bilder, Schriftdateien, Stylesheets oder Skriptabhängigkeiten.
+Alle CSS-Verweise führen zu css/style.css, alle Skriptverweise zu js/script.js.
+Keine Inline-Styles oder Inline-Skripte. Alle Seiten besitzen eine Hauptüberschrift.
+Bilddateien wurden tatsächlich geöffnet und ihr Format geprüft; keine beschädigten
+Dateien oder technischen Leerbilder im Bilderordner. Identische Dateiinhalte wurden
+dedupliziert. Alle eingebundenen Bilder besitzen einen Alternativtext.
+Ergebnis: 0 Dateifehler, 0 fehlende interne Verweise, 0 doppelte HTML-IDs.
+
+INTERAKTIONEN
+JavaScript-Syntaxprüfung bestanden. 19 automatisierte Verhaltensprüfungen bestanden:
+Menü öffnen/schließen; Untermenüs; Escape; erste 24 Galeriebilder; weitere Bilder;
+alle 108 erreichbaren Trainingsbilder; Lightbox; Vor/Zurück; Tastaturbedienung;
+Fokusrückgabe; ungültiges Formular; richtige E-Mail-Adresse; Umlaute/Sonderzeichen;
+Kopierfallback; Öffnungszeitenstatus.
+Diese Prüfungen liefen in einer Node-VM mit einem kleinen DOM-Adapter, gespeist
+mit dem tatsächlich exportierten HTML. Sie sind kein vollständiger Browsertest.
+Es wurde keine Nachricht versendet.
+
+RESPONSIVE DARSTELLUNG – PRÜFGRENZE
+Das bestehende responsive Design wurde übernommen und um Regeln für die unveränderten
+Originalinhalte ergänzt. Geprüft wurden die Regeln für 1280 px (Desktop), 768 px
+(Tablet) und 375 px (Smartphone) auf Codeebene: Spaltenwechsel, Menü, Bildbreiten,
+Formularfelder, Textumbrüche und Galerieraster. Media-Breakpoints liegen u.a. bei
+1000, 780 und 560 px. Auf kleinen Bildschirmen werden Inhalts- und Angebotsabschnitte
+untereinander angeordnet; Galerien haben zwei Spalten.
+
+NICHT DURCHGEFÜHRT: tatsächliche visuelle Browserprüfung und Screenshots dieser
+Bildschirmgrößen. Die verfügbare Vorschau des Sites-Skills unterstützt keine reinen
+statischen Ordner; ein anderer Browser-Testpfad wurde nicht eingesetzt. Deshalb
+wird keine pixelgenau geprüfte Darstellung oder vollständige Browserkompatibilität
+behauptet. Vor Live-Schaltung im eigenen Browser Desktop/Tablet/Smartphone prüfen.
+
+TECHNISCHE ÄNDERUNGEN GEGENÜBER DER ORIGINALSEITE
+- STRATO-Laufzeitcode, Statistikpixel und Widget-Abhängigkeiten entfernt.
+- Bildgalerien mit lokalem JavaScript umgesetzt; Originalreihenfolge beibehalten.
+- Kontaktformular bereitet E-Mail vor und bietet Kopieren, ohne Serverversand.
+- Eingebettete Karte durch Link zur selben Adresse in Google Maps ersetzt.
+- Öffnungszeitenstatus wird lokal aus den Originalzeiten in Europe/Berlin berechnet.
+  Sonntagsstatus entfällt, weil in der Quelle keine Sonntagsangabe existiert.
+- Unnötige versteckte Formular-Fehlermeldung nicht dauerhaft sichtbar übernommen.
+- Doppelte Protokollpräfixe (https://https://) an drei unterschiedlichen externen
+  Zielen berichtigt; Inhalte dieser verlinkten Seiten wurden nicht verändert.
+- Impressum und Datenschutz auf getrennte Seiten verschoben, ohne Textkürzung.
+- Qualifikationen nach vorhandenen Jahren absteigend gegliedert; undatierte Einträge
+  stehen unter der neutralen Überschrift „Ohne Jahresangabe“.
+- Alle lokalen Pfade relativ; frühere normale Verzeichnisadressen per HTML-Weiterleitung.
+  Das ersetzt keine serverseitigen 301-Regeln für frühere index.php-Adressen.
+
+Die Prüfung bewertet die Übernahme und Technik, nicht die fachliche oder rechtliche
+Richtigkeit der Originalaussagen. Offene Originalangaben und fünf fehlende Bilddateien
+stehen vollständig in OFFENE-PUNKTE.txt.
