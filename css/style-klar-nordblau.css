@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* Abend im Wald — vollständiger Ersatz für css/style.css.
-   Dunkles Waldgrün, helle Cremetexte, Salbei als Akzent und zurückhaltende Konturen.
+/* Klar & Nordblau — vollständiger Ersatz für css/style.css.
+   Helles Weiß, kräftiges Blau, serifenlose Schrift und eine klare, kompakte Anordnung.
    Basis: statischer Export aus diesem Chat. Stand: 01.10.2026. */
 
 :root{--paper:#fffaf3;--sand:#f1e6d8;--white:#fffefd;--ink:#49382e;--muted:#705b4e;--clay:#914b34;--clay-dark:#713924;--line:#dfcbbb;--soft:#f6efe6;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif;color-scheme:light;font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:18px;line-height:1.65}
@@ -28,42 +28,42 @@
    Die ursprünglichen Klassen, Inhalte und JS-Zustände bleiben erhalten.
    ============================================================== */
 :root {
-  --paper: #142b23;
-  --sand: #203c31;
-  --white: #1a342a;
-  --ink: #f2f0df;
-  --muted: #b9cbbb;
-  --clay: #acd5b2;
-  --clay-dark: #c5e6be;
-  --line: #476051;
-  --soft: #1b342b;
-  --button-bg: #acd5b2;
-  --button-ink: #183426;
-  --button-hover: #c3e6c5;
-  --secondary-border: #779681;
-  --footer-bg: #0d2119;
-  --footer-ink: #f2f0df;
-  --footer-muted: #bed0bd;
-  --footer-line: #3c5647;
-  --band-bg: #274e3b;
-  --band-ink: #f2f0df;
-  --band-button-bg: #d8e8ca;
-  --band-button-ink: #183426;
-  --band-button-hover: #ecf3df;
-  --selection-bg: #acd5b2;
-  --selection-ink: #183426;
-  --radius: 12px;
-  --small-radius: 8px;
-  --button-radius: 6px;
-  --photo-radius: 14px;
-  --photo-inner-radius: 8px;
-  --focus: #dbefb6;
-  --hero-bg: #1b382b;
-  --serif: Georgia, 'Times New Roman', serif;
+  --paper: #ffffff;
+  --sand: #e7f0f7;
+  --white: #ffffff;
+  --ink: #1d3449;
+  --muted: #4d6477;
+  --clay: #235b83;
+  --clay-dark: #174363;
+  --line: #c6d7e4;
+  --soft: #f4f8fb;
+  --button-bg: #235b83;
+  --button-ink: #ffffff;
+  --button-hover: #174363;
+  --secondary-border: #758b9c;
+  --footer-bg: #1b344c;
+  --footer-ink: #f3f8fc;
+  --footer-muted: #c8dbe9;
+  --footer-line: #49647c;
+  --band-bg: #235b83;
+  --band-ink: #ffffff;
+  --band-button-bg: #ffffff;
+  --band-button-ink: #1d3449;
+  --band-button-hover: #e7f0f7;
+  --selection-bg: #cae2f3;
+  --selection-ink: #1d3449;
+  --radius: 8px;
+  --small-radius: 5px;
+  --button-radius: 5px;
+  --photo-radius: 10px;
+  --photo-inner-radius: 5px;
+  --focus: #174c75;
+  --hero-bg: #e7f0f7;
+  --serif: 'Segoe UI', Arial, Helvetica, sans-serif;
   --sans: 'Segoe UI', Arial, Helvetica, sans-serif;
-  --heading-weight: 400;
-  --shadow: 0 18px 46px #07140d40;
-  --card-shadow: none;
+  --heading-weight: 700;
+  --shadow: 0 14px 38px #1b344c14;
+  --card-shadow: 0 5px 20px #1b344c08;
 }
 
 
@@ -156,19 +156,22 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
   outline-color: currentColor;
 }
 
-:root { color-scheme: dark; }
-.site-header { border-color: var(--line); }
-.brand img { background: #ffffff; padding: 6px; }
-.home-hero { background: linear-gradient(115deg, #142b23, #234732); }
-.hero-photo { border: 1px solid #63866d; background: #1a342a; padding: 12px; }
-.hero-copy h1 { color: #f3efd9; }
-.eyebrow { color: #c5e6be; }
-.offer-card, .service, .related-card { border-color: #55705d; }
-.step { border-top: 1px solid #87a58a; padding: 24px 0 0; }
-.step-number { color: #c4d99e; font-size: 2rem; }
-.gallery-item:hover img { outline-color: #c5e6be; }
-.contact-form { border: 1px solid #55705d; }
-.page-header { border-bottom-color: #55705d; }
+.brand-title { letter-spacing: -.04em; }
+.main-nav { border-top: 1px solid var(--line); padding-top: 6px; }
+.hero-grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: 55px; }
+.hero-copy h1 { font-size: clamp(2.75rem, 4.6vw, 4.25rem); line-height: 1.06; }
+.hero-photo { padding: 0; border: 1px solid var(--line); }
+.hero-photo img { border-radius: 0; height: 430px; }
+.hero-photo figcaption { padding: 13px 18px; }
+.section { padding: 64px 0; }
+.offer-card { border-top: 4px solid var(--clay); }
+.offer-content h2, .offer-content h3, .photo-teaser h3, .teaser h3,
+.related-card h3, .service h2, .prose h3 { font-weight: 650; }
+.step { background: var(--soft); border: 1px solid var(--line); border-left: 4px solid var(--clay); padding: 25px; border-radius: var(--radius); }
+.step-number { font-family: var(--sans); font-size: .95rem; font-weight: 700; }
+.toc nav a { padding-left: 10px; }
+.toc nav a:hover { background: var(--soft); }
+.page-header h1 { letter-spacing: -.04em; }
 
 
 /* Die Änderungen oben gelten auch auf Unterseiten. Kleinere Ansichten
@@ -215,7 +218,7 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
   .contact-band { padding: 36px 0; }
   .split-photo img { height: 320px; }
   .footer-grid { gap: 30px; }
-  .step { padding: 20px 0 0; }
+  
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }

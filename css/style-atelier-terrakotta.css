@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/* Abend im Wald — vollständiger Ersatz für css/style.css.
-   Dunkles Waldgrün, helle Cremetexte, Salbei als Akzent und zurückhaltende Konturen.
+/* Atelier Terrakotta — vollständiger Ersatz für css/style.css.
+   Warmes Papier, kräftiges Rostrot, große Serifentitel und markante gerade Kanten.
    Basis: statischer Export aus diesem Chat. Stand: 01.10.2026. */
 
 :root{--paper:#fffaf3;--sand:#f1e6d8;--white:#fffefd;--ink:#49382e;--muted:#705b4e;--clay:#914b34;--clay-dark:#713924;--line:#dfcbbb;--soft:#f6efe6;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif;color-scheme:light;font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:18px;line-height:1.65}
@@ -28,41 +28,41 @@
    Die ursprünglichen Klassen, Inhalte und JS-Zustände bleiben erhalten.
    ============================================================== */
 :root {
-  --paper: #142b23;
-  --sand: #203c31;
-  --white: #1a342a;
-  --ink: #f2f0df;
-  --muted: #b9cbbb;
-  --clay: #acd5b2;
-  --clay-dark: #c5e6be;
-  --line: #476051;
-  --soft: #1b342b;
-  --button-bg: #acd5b2;
-  --button-ink: #183426;
-  --button-hover: #c3e6c5;
-  --secondary-border: #779681;
-  --footer-bg: #0d2119;
-  --footer-ink: #f2f0df;
-  --footer-muted: #bed0bd;
-  --footer-line: #3c5647;
-  --band-bg: #274e3b;
-  --band-ink: #f2f0df;
-  --band-button-bg: #d8e8ca;
-  --band-button-ink: #183426;
-  --band-button-hover: #ecf3df;
-  --selection-bg: #acd5b2;
-  --selection-ink: #183426;
-  --radius: 12px;
-  --small-radius: 8px;
-  --button-radius: 6px;
-  --photo-radius: 14px;
-  --photo-inner-radius: 8px;
-  --focus: #dbefb6;
-  --hero-bg: #1b382b;
-  --serif: Georgia, 'Times New Roman', serif;
+  --paper: #fff8ed;
+  --sand: #f0e0ca;
+  --white: #fffdf7;
+  --ink: #3f3026;
+  --muted: #6e5646;
+  --clay: #994729;
+  --clay-dark: #78331c;
+  --line: #d7bca0;
+  --soft: #f8eedf;
+  --button-bg: #994729;
+  --button-ink: #ffffff;
+  --button-hover: #78331c;
+  --secondary-border: #a37759;
+  --footer-bg: #3f3026;
+  --footer-ink: #fff8ed;
+  --footer-muted: #e2c9ac;
+  --footer-line: #79604b;
+  --band-bg: #994729;
+  --band-ink: #ffffff;
+  --band-button-bg: #fff8ed;
+  --band-button-ink: #3f3026;
+  --band-button-hover: #f0e0ca;
+  --selection-bg: #e9bea1;
+  --selection-ink: #3f3026;
+  --radius: 2px;
+  --small-radius: 2px;
+  --button-radius: 2px;
+  --photo-radius: 2px;
+  --photo-inner-radius: 0px;
+  --focus: #813317;
+  --hero-bg: #f0e0ca;
+  --serif: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
   --sans: 'Segoe UI', Arial, Helvetica, sans-serif;
-  --heading-weight: 400;
-  --shadow: 0 18px 46px #07140d40;
+  --heading-weight: 700;
+  --shadow: 10px 10px 0 #dbc4a7;
   --card-shadow: none;
 }
 
@@ -156,19 +156,21 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
   outline-color: currentColor;
 }
 
-:root { color-scheme: dark; }
-.site-header { border-color: var(--line); }
-.brand img { background: #ffffff; padding: 6px; }
-.home-hero { background: linear-gradient(115deg, #142b23, #234732); }
-.hero-photo { border: 1px solid #63866d; background: #1a342a; padding: 12px; }
-.hero-copy h1 { color: #f3efd9; }
-.eyebrow { color: #c5e6be; }
-.offer-card, .service, .related-card { border-color: #55705d; }
-.step { border-top: 1px solid #87a58a; padding: 24px 0 0; }
-.step-number { color: #c4d99e; font-size: 2rem; }
-.gallery-item:hover img { outline-color: #c5e6be; }
-.contact-form { border: 1px solid #55705d; }
-.page-header { border-bottom-color: #55705d; }
+.site-header { border-bottom: 2px solid var(--ink); }
+.main-nav { text-transform: uppercase; font-size: .73rem; font-weight: 700; letter-spacing: .035em; }
+.hero-grid { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: 72px; padding: 66px 0 72px; }
+.hero-copy h1 { letter-spacing: -.055em; font-size: clamp(2.9rem, 5.2vw, 4.8rem); }
+.hero-photo { border: 1px solid var(--ink); padding: 12px; }
+.hero-photo img { height: 440px; }
+.hero-photo figcaption { border-top: 1px solid var(--line); margin-top: 10px; }
+.offer-card { border: 0; border-top: 4px solid var(--clay); }
+.offer-content { padding-inline: 28px; }
+.section-heading { padding-bottom: 22px; border-bottom: 1px solid var(--ink); }
+.step { border-top: 3px solid var(--clay); padding: 25px 0 0; }
+.step-number { font-size: 2.4rem; font-weight: 700; }
+.related-card { border-left: 4px solid var(--clay); }
+.page-header { border-bottom: 2px solid var(--clay); }
+.contact-band { border-block: 2px solid var(--ink); }
 
 
 /* Die Änderungen oben gelten auch auf Unterseiten. Kleinere Ansichten
@@ -195,7 +197,7 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
   .page-header { padding: 34px 0 40px; }
   .page-content { padding: 38px 0 54px; }
   .contact-form { padding: 27px; }
-  
+  .hero-grid { gap: 30px; } .main-nav { text-transform: none; letter-spacing: 0; font-weight: 400; }
 }
 @media (max-width: 560px) {
   .wrap, .narrow { width: calc(100% - 32px); }
@@ -215,7 +217,7 @@ textarea:focus-visible, select:focus-visible, summary:focus-visible {
   .contact-band { padding: 36px 0; }
   .split-photo img { height: 320px; }
   .footer-grid { gap: 30px; }
-  .step { padding: 20px 0 0; }
+  .hero-photo { width: calc(100% - 10px); margin-left: 0; } .step { padding: 22px 0 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
